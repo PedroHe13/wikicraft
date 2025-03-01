@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>WikiCraft - Youtubers</title>
+    <style>
+        body.youtube {
+            background: url('https://imgs.search.brave.com/CmDfFU_kVK2hjarv4E_328rGWIKz5hS6icjOcGX9La4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wLm5v/dmFza2luLm1lLzQ3/NTA5OTMzODcucG5n') repeat;
+            background-size: 128px;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+        }
+
+        header {
+            background: rgba(139, 0, 0, 0.9); /* Vermelho de redstone */
+            padding: 25px;
+            border-bottom: 8px solid #3a2f0b;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #ff5555;
+            text-shadow: 3px 3px #000;
+        }
+
+        nav ul li a {
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: #ff5555;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border: 8px solid #3a2f0b;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #ff5555;
+            text-shadow: 3px 3px #000;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .youtuber-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: url('https://minecraft.wiki/images/Disc_11_JE1_BE1.png') no-repeat center;
+            background-size: cover;
+            border: 5px solid #ff5555;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .youtuber-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(255, 85, 85, 0.7);
+        }
+
+        .youtuber-section h3 {
+            color: #ff5555;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px #000;
+            text-align: center;
+        }
+
+        .youtuber {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 3px solid #3a2f0b;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .youtuber:hover {
+            background: rgba(255, 85, 85, 0.2);
+        }
+
+        .youtuber img {
+            width: 100px;
+            height: 100px;
+            border: 4px solid #ff5555;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .youtuber img:hover {
+            transform: scale(1.1);
+        }
+
+        .youtuber p {
+            font-size: 0.9em;
+            color: #fff;
+            text-shadow: 1px 1px #000;
+        }
+
+        footer {
+            background: rgba(139, 0, 0, 0.9);
+            border-top: 8px solid #3a2f0b;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body class="youtube">
+    <header>
+        <h1>WikiCraft</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para lista de tópicos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Youtubers Famosos</h2>
+            <p>Como circuitos de redstone, os YouTubers energizam a comunidade Minecraft com suas aventuras e criações. Aqui estão os maiores nomes que fazem o mundo pixelado pulsar!</p>
+
+            <!-- YouTubers Gringos Atuais -->
+            <div class="youtuber-section">
+                <h3>YouTubers Gringos Mais Populares (2025)</h3>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/btwFMeENq4vFG-UjadDMbDbErRDSiNKky5V5JqiX3pU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGV4ZXJ0by5jb20v/Y2RuLWltYWdlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzEw/LzE1L0RyZWFtTWFz/ay5qcGc_d2lkdGg9/MTIwMCZxdWFsaXR5/PTc1JmZvcm1hdD1h/dXRv" alt="Dream">
+                    <p><strong>Dream</strong>: Lenda dos speedruns e manhunts, com mais de 31 milhões de inscritos, ele é um mestre em estratégias e narrativas épicas.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/8nZUdguUIVDn639JqAKpbbnPrqFkzXfex0zllP-4s6Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qll6VmpZMkZp/T0RndFpUazVZaTAw/TjJGaExXSTVOVFF0/TmpBek1tTmtZV0kw/WXpJM1hrRXlYa0Zx/Y0djQC5qcGc" alt="MrBeast Gaming">
+                    <p><strong>MrBeast Gaming</strong>: Parte do império MrBeast, seus desafios insanos no Minecraft atraem milhões, com foco em entretenimento grandioso.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/6_WpF0CL7IRGsiOMY4IN5ocpi7UC9feMoAGSIA3pzFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmFtb3VzYmlydGhk/YXlzLmNvbS9mYWNl/cy9hcnNlbWVudC1w/cmVzdG9uLWltYWdl/LmpwZw" alt="PrestonPlayz">
+                    <p><strong>PrestonPlayz</strong>: Energia contagiante e minigames criativos mantêm seus 15 milhões de inscritos vidrados em cada vídeo.</p>
+                </div>
+            </div>
+
+            <!-- YouTubers Brasileiros Atuais -->
+            <div class="youtuber-section">
+                <h3>YouTubers Brasileiros Mais Populares (2025)</h3>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/UwUmrdp9__uJ3kte9cqJyR5gITQTWn8sr5lEt4Y6llw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aWpiYS5jb20uYnIv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDIvcGhvdG9fZWRp/dGVkLmpwZw" alt="AuthenticGames">
+                    <p><strong>AuthenticGames</strong>: O rei brasileiro do Minecraft, com construções épicas e mais de 20 milhões de inscritos, continua dominando.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/BBBwmLXzyuDcTikp5dHqFXW0ZFv_J-W5HguHLWeHYqI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYW9w/YXVsb3BhcmFjcmlh/bmNhcy5jb20uYnIv/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MDkvU1BQQy10YXpl/cmNyYWZ0LTgwMHg0/MjkuanBlZw" alt="TazerCraft">
+                    <p><strong>TazerCraft</strong>: A dupla Pac e Mike encanta com séries narrativas e humor, somando mais de 14 milhões de inscritos.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/tQW1zo3x7l9xgbGebLvHMcyehwDexAL9-qEo6RuKCHc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9WSzZGcVpoNGhC/ektUSmRxdU9BaFVk/emZ6U05mbk9Ea0ha/LVpqMXRiX0dJdy1P/alJzZHNUczNXdDQw/cEpMSDFMb2FFMj13/MjQwLWg0ODAtcnc" alt="Robin Hood Gamer">
+                    <p><strong>Robin Hood Gamer</strong>: Focado em aventuras e gameplay divertido, ele mantém 12 milhões de inscritos fiéis.</p>
+                </div>
+            </div>
+
+            <!-- YouTubers Famosos Antigamente -->
+            <div class="youtuber-section">
+                <h3>YouTubers Famosos do Passado</h3>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/cz_b1_EY0VKgH9yLNhfRDy6mNFGzkLp1tXOjSmvVLVc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9HRmhPRGhq/WkdNdFpUQXdZaTAw/TW1RM0xUZzROekl0/TXpabE5qSTBORFEw/WVRGa1hrRXlYa0Zx/Y0djQC5qcGc" alt="CaptainSparklez">
+                    <p><strong>CaptainSparklez</strong>: Criador de "Revenge", um hino do Minecraft, ele foi ícone nos anos 2010 com mais de 11 milhões de inscritos.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/Rys36_i8OUW5BDE6PByOS9h2wORivN5JOSM4CbRc6-I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLTAwMDEw/NTg5MTE3My10aWVr/azgtdDEwODB4MTA4/MC5qcGc" alt="SkyDoesMinecraft">
+                    <p><strong>SkyDoesMinecraft</strong>: Pioneiro com suas séries Skyblock, foi um dos primeiros a explodir o Minecraft no YouTube.</p>
+                </div>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/JXYKgIIijcgb2Pp9eEdAXRu4bvi9BKK_i6e1e7tcwyg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2FjZS9zdGFuZGFy/ZC85NzYvY3BzcHJv/ZHBiL0JGOTgvcHJv/ZHVjdGlvbi9fMTE2/ODg0MDk0XzI2Mjlm/ZmMzLTJjYTEtNDkz/ZC1iNTVkLTNkYjY3/ZWM1ZmI4NC5qcGc" alt="StampyLongHead">
+                    <p><strong>StampyLongHead</strong>: Seu mundo adorável e voz única marcaram a infância de muitos nos anos 2010.</p>
+                </div>
+            </div>
+
+            <!-- Menção Honrosa ao Technoblade -->
+            <div class="youtuber-section">
+                <h3>Menção Honrosa: Technoblade</h3>
+                <div class="youtuber">
+                    <img src="https://imgs.search.brave.com/UZd4axzcQ8VaH0Op346hlpEZ2navJoYwxZS_PsO_frM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvbWlu/ZWNyYWZ0LXRlY2hu/b2JsYWRlLWhvbGRp/bmctc3dvcmQtcjh5/MGgya3h0Nm92d3Fq/cS5qcGc" alt="Technoblade">
+                    <p><strong>Technoblade</strong>: O lendário "Rei do PvP" faleceu em 2022, mas seu legado vive com mais de 16 milhões de inscritos. "Technoblade never dies!"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 WikiCraft</p>
+    </footer>
+    <script src="./src/js/global.js"></script>
+</body>
+</html>
