@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>WikiCraft - Poções</title>
+    <style>
+        body.pocoes {
+            background: url('https://minecraft.wiki/images/Nether.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            min-height: 100vh; /* Garante altura mínima para scroll */
+        }
+
+        header {
+            background: rgba(139, 0, 0, 0.9); /* Vermelho escuro do Nether */
+            padding: 25px;
+            border-bottom: 8px solid #FF4500;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Brilho magenta */
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #FF00FF; /* Magenta vibrante */
+            text-shadow: 3px 3px #000;
+        }
+
+        nav ul li a {
+            color: #FF00FF;
+        }
+
+        nav ul li a:hover {
+            color: #00FFFF; /* Ciano ao passar o mouse */
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            border: 8px solid #FF4500;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.3); /* Sombra magenta sutil */
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #FF00FF;
+            text-shadow: 3px 3px #000;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #fff;
+            text-shadow: 1px 1px #000;
+            margin: 15px 0;
+        }
+
+        .potion {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 0, 255, 0.2); /* Magenta translúcido */
+            border-left: 5px solid #FF00FF;
+            border-radius: 5px;
+        }
+
+        .potion strong {
+            color: #FF00FF;
+        }
+
+        footer {
+            background: rgba(139, 0, 0, 0.9);
+            border-top: 8px solid #FF4500;
+            padding: 15px;
+        }
+
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: red;
+            animation: rgbParticle 5s infinite;
+        }
+
+        @keyframes rgbParticle {
+            0% { transform: translate(0, 0); background: red; }
+            33% { transform: translate(50px, 100px); background: green; }
+            66% { transform: translate(-50px, 200px); background: blue; }
+            100% { transform: translate(0, 300px); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="pocoes">
+    <header>
+        <h1>WikiCraft</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para lista de tópicos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Guia de Poções</h2>
+            <p>No caldeirão ardente do Nether, as poções brilham como mágica líquida, pulsando com cores vibrantes e poderes ocultos. A alquimia no Minecraft é uma arte ancestral, transformando ingredientes brutos em elixires que podem curar, fortalecer ou enganar. Desde o suporte do suporte de poções até as chamas do pó de blaze, este guia explora todas as poções disponíveis até 2025, revelando suas receitas, efeitos e usos práticos direto do coração flamejante do mundo pixelado!</p>
+
+            <div class="potion">
+                <p><strong>Poção de Força</strong>: Misture pó de blaze com uma verruga do Nether em uma garrafa de água, depois adicione mais pó de blaze. O líquido vermelho escuro dá um impulso de força, aumentando o dano corpo a corpo por 3 minutos – perfeito para enfrentar multidões de zumbis ou o Wither com golpes devastadores.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Regeneração</strong>: Combine verruga do Nether com uma garrafa de água e adicione uma lágrima de ghast. Este elixir roxo restaura a vida gradualmente por 45 segundos, como um totem pulsando em suas veias, ideal para sobreviver a batalhas prolongadas ou quedas perigosas.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Invisibilidade</strong>: Crie uma poção de visão noturna (verruga do Nether + cenoura dourada) e adicione um olho de aranha fermentado. O líquido cinza claro torna você invisível por 3 minutos, excelente para escapar de mobs ou emboscar jogadores em PvP – mas cuidado com armaduras visíveis!</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Cura</strong>: Misture verruga do Nether com uma garrafa de água e adicione uma fatia de melancia reluzente. Este elixir rosa restaura 4 corações instantaneamente, um alívio rápido em meio ao caos do Nether ou contra ataques de creepers surpresa.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Velocidade</strong>: Combine verruga do Nether com uma garrafa de água e acrescente açúcar. O líquido azul claro acelera seus movimentos por 3 minutos, perfeito para atravessar as vastas florestas ou fugir de explosões iminentes no calor ardente do combate.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Visão Noturna</strong>: Use verruga do Nether em uma garrafa de água e adicione uma cenoura dourada. Este líquido azul escuro ilumina a escuridão por 3 minutos, revelando cavernas profundas ou o Nether sombrio como se fosse dia.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Respiração Aquática</strong>: Misture verruga do Nether com uma garrafa de água e junte um baiacu. O elixir turquesa concede 3 minutos de respiração subaquática, essencial para explorar monumentos oceânicos ou minas inundadas sem sufocar.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Resistência ao Fogo</strong>: Combine verruga do Nether com uma garrafa de água e adicione um cubo de magma. Este líquido laranja protege contra fogo e lava por 3 minutos, uma bênção no Nether flamejante ou contra ataques de blazes.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Salto</strong>: Use verruga do Nether em uma garrafa de água e acrescente um pé de coelho. O líquido verde claro aumenta a altura dos saltos por 3 minutos, permitindo alcançar copas de árvores ou escapar de ravinas traiçoeiras na floresta.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Lentidão</strong>: Misture verruga do Nether com uma garrafa de água e adicione um olho de aranha fermentado a uma poção de velocidade ou salto. Este líquido cinza escuro desacelera os movimentos por 1 minuto e 30 segundos, útil para prender inimigos em PvP.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Veneno</strong>: Combine verruga do Nether com uma garrafa de água e junte um olho de aranha. O líquido verde venenoso causa dano por 45 segundos, perfeito para enfraquecer mobs ou jogadores antes do golpe final.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Fraqueza</strong>: Misture um olho de aranha fermentado em uma garrafa de água (sem verruga do Nether). Este líquido cinza reduz o dano corpo a corpo por 1 minuto e 30 segundos, crucial para curar aldeões zumbis ou debilitar oponentes.</p>
+            </div>
+
+            <div class="potion">
+                <p><strong>Poção de Dano</strong>: Crie uma poção de cura ou veneno e adicione um olho de aranha fermentado. O líquido preto inflige 6 corações de dano instantaneamente, uma arma traiçoeira para virar o jogo em batalhas ou contra multidões.</p>
+            </div>
+
+            <p>Cada frasco é uma explosão de cores e possibilidades, preparado no suporte de poções com a chama do Nether como guia. Amplifique com pó de redstone para maior duração, ou com pó de glowstone para efeitos mais fortes. Adicione pólvora para poções arremessáveis ou fermento infernal para versões persistentes. No coração ardente do Minecraft, a alquimia é sua varinha mágica – misture, experimente e domine!</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 WikiCraft</p>
+    </footer>
+    <script>
+        setInterval(() => {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = '-10px';
+            document.body.appendChild(particle);
+            setTimeout(() => particle.remove(), 5000);
+        }, 500);
+    </script>
+</body>
+</html>

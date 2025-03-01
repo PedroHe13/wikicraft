@@ -1,0 +1,159 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #3a2f0b;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+/* Content */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 5px solid #3a2f0b;
+    transition: transform 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #000;
+}
+
+.content p {
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 5px solid #3a2f0b;
+}
+
+/* Temas por bioma */
+body.campo {
+    background: url('https://cdn.wallpapersafari.com/28/18/Hs8WqV.gif') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+}
+body.campo header, body.campo footer { background: rgba(0, 100, 0, 0.8); }
+body.campo h1, body.campo h2, body.campo nav ul li a { color: #55ff55; }
+body.campo nav ul li a:hover { color: #ff5555; }
+
+body.selva { background: url('https://minecraft.wiki/images/Jungle.png'); }
+body.selva header, body.selva footer { background: rgba(0, 50, 0, 0.8); }
+body.selva h1, body.selva h2, body.selva nav ul li a { color: #55ff55; }
+body.selva nav ul li a:hover { color: #ff5555; }
+
+body.youtube { background: url('https://wallpapercave.com/wp/wp4410618.png'); }
+body.youtube header, body.youtube footer { background: #ff0000; }
+body.youtube h1, body.youtube h2 { color: #fff; }
+body.youtube .content { background: rgba(255, 255, 255, 0.9); color: #000; }
+body.youtube nav ul li a { color: #fff; }
+body.youtube nav ul li a:hover { color: #55ff55; }
+
+body.servidores { background: url('https://hypixel.net/attachments/hypixel-skywars-jpg.2186148/'); }
+body.servidores header, body.servidores footer { background: rgba(50, 50, 50, 0.8); }
+body.servidores h1, body.servidores h2, body.servidores nav ul li a { color: #FFD700; }
+body.servidores nav ul li a:hover { color: #FF4500; }
+
+body.deserto { background: url('https://minecraft.wiki/images/Desert.png'); }
+body.deserto header, body.deserto footer { background: rgba(194, 178, 128, 0.8); }
+body.deserto h1, body.deserto h2, body.deserto nav ul li a { color: #FFD700; }
+body.deserto nav ul li a:hover { color: #FF4500; }
+
+body.carvalho-escuro { background: url('https://imgs.search.brave.com/qntykdBaksq9sBIZWi9vgLT_PBLliqrPOqJgQ2p46sE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9maWxl/cy50ZWNub2Jsb2cu/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzA1L2hlcm9i/cmluZS1taW5lY3Jh/ZnQtMi03MDB4NDM2/LmpwZw'); filter: brightness(0.7); }
+body.carvalho-escuro header, body.carvalho-escuro footer { background: rgba(20, 20, 20, 0.9); }
+body.carvalho-escuro h1, body.carvalho-escuro h2, body.carvalho-escuro nav ul li a { color: #A9A9A9; }
+body.carvalho-escuro nav ul li a:hover { color: #FF4500; }
+
+body.montanha { background: url('https://minecraft.wiki/images/Extreme_Hills.png'); }
+body.montanha header, body.montanha footer { background: rgba(128, 128, 128, 0.8); }
+body.montanha h1, body.montanha h2, body.montanha nav ul li a { color: #D3D3D3; }
+body.montanha nav ul li a:hover { color: #FF4500; }
+
+body.floresta { background: url('https://minecraft.wiki/images/Forest.png'); }
+body.floresta header, body.floresta footer { background: rgba(34, 139, 34, 0.8); }
+body.floresta h1, body.floresta h2, body.floresta nav ul li a { color: #55ff55; }
+body.floresta nav ul li a:hover { color: #FF4500; }
+
+body.pantano { background: url('https://minecraft.wiki/images/Swamp.png'); }
+body.pantano header, body.pantano footer { background: rgba(47, 79, 79, 0.8); }
+body.pantano h1, body.pantano h2, body.pantano nav ul li a { color: #2F004F; }
+body.pantano nav ul li a:hover { color: #FF4500; }
+
+body.taiga { background: url('https://minecraft.wiki/images/Taiga.png'); }
+body.taiga header, body.taiga footer { background: rgba(173, 216, 230, 0.8); }
+body.taiga h1, body.taiga h2, body.taiga nav ul li a { color: #ADD8E6; }
+body.taiga nav ul li a:hover { color: #FF4500; }
+
+body.crafting { background: url('https://imgs.search.brave.com/i4dcYtKNsiJYXXnaq1-HE_EA02HaQ-fVNJspO9BDUZA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGNnYW1lc24uY29t/L3dwLWNvbnRlbnQv/c2l0ZXMvcGNnYW1l/c24vMjAyMi8wNi9t/aW5lY3JhZnQtbW9k/cy1ybGNyYWZ0LWJp/b21lLTU1MHgzMDku/anBn')no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; }
+body.crafting header, body.crafting footer { background: rgba(139, 69, 19, 0.8); }
+body.crafting h1, body.crafting h2, body.crafting nav ul li a { color: #FFD700; }
+body.crafting nav ul li a:hover { color: #FF4500; }
+
+body.pocoes { background: url('https://minecraft.wiki/images/Nether.png'); }
+body.pocoes header, body.pocoes footer { background: rgba(139, 0, 0, 0.8); }
+body.pocoes h1, body.pocoes h2, body.pocoes nav ul li a { color: #FF00FF; }
+body.pocoes nav ul li a:hover { color: #00FFFF; }
+
+body.mobs { background: url('https://imgs.search.brave.com/GFpF-nZh1xqVsLF7HkDPFn8cfMrzEiRa_O2lbYIMXZI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bDNrNmlhbHVobG1h/MS5wbmc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9ZWU1MDFkODlk/OTAwODIzYTMwZjZj/NTcxZmVkNzNjOTNl/YWRmYjgyNA')no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+
+}
+body.mobs header, body.mobs footer { background: rgba(0, 100, 0, 0.8); }
+body.mobs h1, body.mobs h2, body.mobs nav ul li a { color: #55ff55; }
+body.mobs nav ul li a:hover { color: #FF4500; }
